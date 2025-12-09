@@ -6,3 +6,137 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  font-size: 12px;
+  height: 90px;
+
+  .logo {
+    img {
+      width: 60%;
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        &:hover {
+          a {
+            color: #3880F1;
+          }
+        }
+
+        a {
+          line-height: 58px;
+          color: black;
+
+        }
+
+        a[status='active'] {
+          color: #3880F1;
+          border-bottom: .25rem solid #3880F1;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .current-series {
+    background-color: #3880F1;
+    left: 5%;
+  }
+
+  .row {
+    .thumbnail {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+
+      img {
+        object-position: top;
+      }
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  button {
+    background-color: #3880F1;
+  }
+}
+
+.jumbotron {
+  height: 390px;
+  background-image: url('/img/jumbotron.jpg');
+  background-size: cover;
+}
+
+.banner {
+  background-color: #3880F1;
+  height: 150px;
+
+  .col {
+    height: 35%;
+  }
+}
+
+footer {
+  .footer-sitemap {
+    background-image: url(/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    img {
+      width: 28%;
+      top: -25%;
+      right: 17%;
+    }
+
+    .row {
+      width: 40%;
+
+      .col {
+        h5 {
+          font-size: 15px;
+        }
+
+        a {
+          color: #939392;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .footer-cta {
+    height: 80px;
+    background-color: #303030;
+
+    button {
+      height: fit-content;
+      border-color: #3984FA;
+
+      &:hover {
+        background-color: #3880F1;
+      }
+    }
+
+    span {
+      color: #3E82F5;
+    }
+  }
+}

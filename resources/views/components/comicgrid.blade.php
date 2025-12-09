@@ -8,7 +8,17 @@
                 </div>
                 <div class="row row-cols-sm-2 row-cols-md-4 row-cols-lg-6 h-100 justify-content-around py-3 row-gap-3">
                     @foreach ($comics as $comic)
-                    <ComicCard key={id} src={thumb} alt={title} spanContent={series} />
+                    <x-comiccard>
+                        <x-slot:thumb>
+                            {{ $comic['thumb'] }}
+                        </x-slot:thumb>
+                        <x-slot:title>
+                            {{ $comic['title'] }}
+                        </x-slot:title>
+                        <x-slot:series>
+                            {{ $comic['series'] }}
+                        </x-slot:series>
+                    </x-comiccard>
                     @endforeach
                 </div>
                 <button class="border-0 rounded-0 text-white text-uppercase fw-bold py-2 px-4 mb-4">

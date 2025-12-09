@@ -9,6 +9,6 @@
 <body>
     @include("partials.header")
     @yield("main")
-    {{-- @include("partials.footer") --}}
+    @include("partials.footer")
 </body>
 </html>

@@ -8,7 +8,7 @@
 </head>
 <body>
     @include("partials.header")
-{{--     @yield("contenuto")
-    @include("partials.footer") --}}
+    @yield("main")
+    {{-- @include("partials.footer") --}}
 </body>
 </html>
